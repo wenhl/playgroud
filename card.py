@@ -94,8 +94,6 @@ def main():
         name = first_name + " " + last_name + "'s Card"
         card_product_token = create_card_product(name)
 
-        #user_token = "1daff8c6-40e5-4738-a545-b3f5a09a0bdb"
-        #card_product_token = "b153ab55-a8f8-4aa2-9802-7b3a0b2cdf8e"
         response = create_virtual_card(card_product_token, user_token)
         st.write("Virtual Card Generated Successfully")
         st.write("Response:", response.json())
