@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 # Authenticate the OpenAI API
-openai.api_key = st.secrets["API_Key"]
+openai.api_key = st.secrets["KEY"]
 
 
 # Create a function to generate the cover letter
