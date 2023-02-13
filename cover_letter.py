@@ -37,11 +37,14 @@ def cover_letter_generator():
     user_profile = st.text_area("Enter Your Profile:") 
     job_description = st.text_area("Enter Job Description:")
 
-
-    prompt = ("Write a cover letter for {job_title} position:\n{job_description}\n\nMy profile:\n{user_profile}")
-
+    #prompt = ("Write a cover letter for {job_title} position:\n{job_description}\n\nMy profile:\n{user_profile}")
+  
 
     if st.button("Generate Cover Letter"):
+
+        prompt = ("Write a cover letter for "+ job_title +"  position: \n "+ job_description + "\n\n My profile:\n " + user_profile)
+
+        #st.markdown("Prompt to ChatGPT is: " + prompt)
         cover_letter = generate_cover_letter(prompt, model, word_count, tone)
         st.success("Success! Your Cover Letter is Ready")
         st.markdown(cover_letter)
