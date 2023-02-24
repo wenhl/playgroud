@@ -31,7 +31,7 @@ def cover_letter_generator():
     st.title("OpenAI GPT Cover Letter Generator")
     model = "text-davinci-003"
     word_count = st.slider("Word Count", 100, 500, 300)
-    tone = st.slider("Tone", 0.0, 1.0, 0.5)
+    tone = st.slider("Temperature", 0.0, 1.0, 0.5)
 
     job_title = st.text_input("Enter the job title you are applying for:")
     user_profile = st.text_area("Enter Your Profile:") 
