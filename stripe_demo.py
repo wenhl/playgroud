@@ -84,7 +84,7 @@ def create_bank_account(customer_id, token_id):
     return bank_account
 
 def main():
-    st.title("Use Stripe API")
+    st.title("Create Bank Account with Stripe API")
     st.markdown("This demo will create Customer, Payment Method, and Bank Account")
 
 
